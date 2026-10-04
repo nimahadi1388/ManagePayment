@@ -15,7 +15,7 @@ const App = () => {
   const [account, setAccount] = useState(140000);
   const [modal, setModal] = useState(false);
   const [filterToggle, setFilterToggle] = useState(false);
-  const [pageManage, setPageManage] = useState("saveMoney");
+  const [pageManage, setPageManage] = useState("main");
   return (
     <>
       <FilterToggleContext.Provider
