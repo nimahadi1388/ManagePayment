@@ -1,0 +1,16 @@
+export const PaymentItems = [
+  { id: 1, paymentTitle: "تعمیر ماشین", price: 4000, isDone: false },
+  { id: 2, paymentTitle: "خرید اینترنت", price: 10000, isDone: false },
+  { id: 3, paymentTitle: "خرید ماشین", price: 14000, isDone: false },
+  { id: 4, paymentTitle: "کافه رفتن", price: 54000, isDone: false },
+  { id: 5, paymentTitle: "خرید لباس", price: 850000, isDone: false },
+  { id: 6, paymentTitle: "قبض برق", price: 120000, isDone: false },
+  { id: 7, paymentTitle: "خرید مواد غذایی", price: 670000, isDone: false },
+  { id: 8, paymentTitle: "تاکسی اینترنتی", price: 75000, isDone: false },
+  { id: 9, paymentTitle: "خرید هدفون", price: 1250000, isDone: false },
+  { id: 10, paymentTitle: "رستوران", price: 320000, isDone: false },
+  { id: 11, paymentTitle: "قبض آب", price: 95000, isDone: false },
+  { id: 12, paymentTitle: "خرید کتاب", price: 180000, isDone: false },
+  { id: 13, paymentTitle: "باشگاه", price: 450000, isDone: false },
+  { id: 14, paymentTitle: "خرید لوازم کامپیوتر", price: 980000, isDone: false },
+];

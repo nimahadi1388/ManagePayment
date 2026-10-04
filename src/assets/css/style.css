@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "VazirMatn";
+  src: url("../font/Vazir-Medium-FD-WOL.woff2") format("woff2");
+  src: url("../font/Vazir-Medium-FD-WOL.ttf") format("ttf");
+  src: url("../font/Vazir-Bold-FD-WOL.ttf") format("ttf");
+  src: url("../font/Vazir-Bold-FD-WOL.woff2") format("woft2");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #2c1321;
+  background: linear-gradient(315deg, #2c1321 70%, #463044 100%);
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "VazirMatn";
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #a7adc6;
+}
+p {
+  color: #8797af;
+}
+a {
+  color: #a7adc6 !important;
+  text-decoration: none !important;
+}
+button {
+  color: #a7adc6 !important;
+}
+label {
+  color: #a7adc6 !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.scroll {
+  max-height: 24rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8797af #2c1320;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #2c1320;
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #8797af;
+  border-radius: 10px;
+  border: 2px solid #2c1320;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #a7adc6;
+}
+.titleUnder {
+  position: relative;
+  margin-top: 2rem;
+  &::after {
+    content: "";
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    display: inline-block;
+    background: #8797af;
+    width: 7rem;
+    height: 3px;
+  }
+}
+.headerSaver {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+    background: #56667a;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
