@@ -34,7 +34,7 @@ const Saver = ({
           />
         ))}
         {/* <FilterSavers saverItems={saverItems} setSaverItems={setSaverItems} /> */}
-        <AddSaver/>
+        <AddSaver saverItems={saverItems} setSaverItems={setSaverItems} />
       </div>
     </section>
   );

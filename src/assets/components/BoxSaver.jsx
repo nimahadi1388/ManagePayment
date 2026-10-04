@@ -107,7 +107,7 @@ const BoxSaver = ({
     }
   };
   return (
-    <motion.section className="relative ">
+    <motion.section className="relative z-1">
       <div
         onClick={() => {
           // handleAddMoney(id);
