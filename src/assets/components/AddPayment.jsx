@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { ModalContext } from "../context/ModalContext";
 import { PaymentItemsContext } from "../context/PaymentItemContext";
+import CloseBtn from "../../../public/image/close.png";
 
 const AddPayment = ({ titleBtn }) => {
   const { modal, setModal } = useContext(ModalContext);
@@ -46,7 +47,7 @@ const AddPayment = ({ titleBtn }) => {
         <div className="text-center relative">
           <img
             className="absolute -top-5 -right-15 cursor-pointer transition-transform duration-200 hover:scale-110"
-            src="../../../public/image/close.png"
+            src={CloseBtn}
             width={35}
             alt=""
             onClick={handleCloseModal}

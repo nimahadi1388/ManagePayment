@@ -1,7 +1,10 @@
 import { useContext, useState } from "react";
 import { PaymentItemsContext } from "../context/PaymentItemContext";
 import { motion } from "motion/react";
-
+import Personal from "../../../public/image/clothes.png";
+import Essential from "../../../public/image/essential.png";
+import FreeTime from "../../../public/image/freeTime.png";
+import SaveMoney from "../../../public/image/saveMoney.png";
 const BoxSaver = ({
   amoutSave,
   id,
@@ -107,26 +110,18 @@ const BoxSaver = ({
     }
   };
   return (
-    <motion.section className="relative z-1">
+    <motion.section className="relative z-2">
       <div
         onClick={() => {
           // handleAddMoney(id);
           handleOpenOption();
         }}
-        className="mx-auto border cursor-pointer bg-[#2c1321] min-h-40 grid place-content-center border-white mt-4 p-[2.6rem] w-50 rounded-circle"
+        className="mx-auto hoverBox border cursor-pointer bg-transparent min-h-40 grid place-content-center border-white mt-4 p-[2.6rem] w-50 rounded-circle"
       >
-        {tage === "شخصی" && (
-          <img src="../../../public/image/clothes.png" alt="" />
-        )}
-        {tage === "تفریح" && (
-          <img src="../../../public/image/freeTime.png" alt="" />
-        )}
-        {tage === "ضروری" && (
-          <img src="../../../public/image/essential.png" alt="" />
-        )}
-        {tage === "پس انداز" && (
-          <img src="../../../public/image/saveMoney.png" alt="" />
-        )}
+        {tage === "شخصی" && <img src={Personal} alt="" />}
+        {tage === "تفریح" && <img src={FreeTime} alt="" />}
+        {tage === "ضروری" && <img src={Essential} alt="" />}
+        {tage === "پس انداز" && <img src={SaveMoney} alt="" />}
         <span className="text-[#8797af] text-center bg-[#8797af2e] backdrop-blur-2xl px-1 py-0.5 rounded-1">
           {tage}
         </span>

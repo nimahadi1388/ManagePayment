@@ -9,6 +9,7 @@ import { ModalContext } from "./assets/context/ModalContext";
 import { FilterToggleContext } from "./assets/context/FilterToggleContext";
 import { motion } from "motion/react";
 import SaveMoney from "./assets/Pages/SaveMoney";
+import Card from "./assets/Pages/Card";
 const App = () => {
   const [paymentItems, setPaymentItems] = useState(PaymentItems);
   const [account, setAccount] = useState(14000);
@@ -39,6 +40,7 @@ const App = () => {
 
             <Payments pageManage={pageManage} />
             <SaveMoney pageManage={pageManage} />
+            <Card pageManage={pageManage} />
             <AddPayment titleBtn={"افزودن"} />
           </ModalContext.Provider>
         </PaymentItemsContext.Provider>

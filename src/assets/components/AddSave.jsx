@@ -23,6 +23,7 @@ const AddSaver = ({ saverItems, setSaverItems }) => {
       setInputP("");
       setInputT("");
       setBtnManager("");
+      alert('پس انداز جدید باز شد')
     } else {
       alert("لطفا مقدار مورد نظر را وارد کنید");
     }

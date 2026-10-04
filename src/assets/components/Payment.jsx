@@ -30,7 +30,7 @@ const Payments = ({ pageManage }) => {
           animate={{ opacity: 1, translateX: 0 }}
           exit={{ translateY: 100 }}
           transition={{ duration: 1 }}
-          className={`w-1/2 mx-auto mt-3`}
+          className={`w-1/2! max-[1377px]:w-[55%]! max-[1281px]:w-[60%]! mx-auto mt-3`}
         >
           <h2 className="text-center titleUnder mb-1">هزینه ها</h2>
 
