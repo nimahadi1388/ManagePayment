@@ -21,6 +21,7 @@ const AddPayment = ({ titleBtn }) => {
         isDone: false,
       };
       setPaymentItems([...paymentItems, newPayment]);
+      alert("هزینه جدید اضافه شد");
       setInputValueP("");
       setInputValueT("");
     } else {

@@ -12,7 +12,7 @@ import SaveMoney from "./assets/Pages/SaveMoney";
 import Card from "./assets/Pages/Card";
 const App = () => {
   const [paymentItems, setPaymentItems] = useState(PaymentItems);
-  const [account, setAccount] = useState(14000);
+  const [account, setAccount] = useState(140000);
   const [modal, setModal] = useState(false);
   const [filterToggle, setFilterToggle] = useState(false);
   const [pageManage, setPageManage] = useState("saveMoney");
